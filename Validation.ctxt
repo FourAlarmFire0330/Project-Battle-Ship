@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Validation()
+comment1.params=shipName
+comment1.target=boolean\ checkShipName(java.lang.String)
+comment2.params=pos\ defaultSize\ isNumeric
+comment2.target=boolean\ checkPosition(int,\ int,\ boolean)
+comment3.params=xPos\ yPos\ xP\ yP
+comment3.target=boolean\ checkRepeatPos(int,\ int,\ int[],\ int[])
+numComments=4

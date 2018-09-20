@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ShipList()
+comment0.text=\r\n\ Default\ Constructor\r\n
+comment1.params=ships
+comment1.target=void\ setShips(java.util.ArrayList)
+comment1.text=\r\n\ Accessor\ and\ Mutator\ Methods\r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getShips()
+comment3.params=shipName\ xPos\ yPos
+comment3.target=void\ setShipInfo(java.lang.String,\ int,\ int)
+comment4.params=ships\ x
+comment4.target=int[]\ getShipXPosition(java.util.ArrayList,\ int)
+comment5.params=ships\ y
+comment5.target=int[]\ getShipYPosition(java.util.ArrayList,\ int)
+numComments=6

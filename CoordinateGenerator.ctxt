@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CoordinateGenerator()
+comment0.text=\r\n\ Default\ Constructor\r\n
+comment1.params=minimumValue
+comment1.target=void\ setMinimum(int)
+comment1.text=\r\n\ Accessor\ and\ Mutator\ methods\r\n
+comment2.params=
+comment2.target=int\ getMinimum()
+comment3.params=maximumValue
+comment3.target=void\ setMaximum(int)
+comment4.params=
+comment4.target=int\ getMaximum()
+numComments=5

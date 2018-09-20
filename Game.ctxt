@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Game()
+comment0.text=\r\n\ Default\ Constructor\r\n
+comment1.params=playerShips
+comment1.target=void\ setPlayerShips(ShipList)
+comment1.text=\r\n\ accessor\ and\ mutator\ method\r\n
+comment2.params=
+comment2.target=ShipList\ getPlayerShips()
+comment3.params=computerShips
+comment3.target=void\ setComputerShips(ShipList)
+comment4.params=
+comment4.target=ShipList\ getComputerShips()
+comment5.params=
+comment5.target=void\ welcomeToGame()
+comment6.params=
+comment6.target=void\ loadingSettings()
+comment7.params=
+comment7.target=void\ gameEntrence()
+numComments=8
