@@ -60,7 +60,7 @@ public class Ship
     
     public void setNoOfHitsMade(int noOfHitsMade)
     {
-        this.noOfHitsMade = noOfHitsMade;
+        this.noOfHitsMade = this.noOfHitsMade + noOfHitsMade;
     }
     public int getNoOfHitsMade()
     {

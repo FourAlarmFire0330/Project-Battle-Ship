@@ -42,4 +42,11 @@ public class CoordinateGenerator
     {
         return maximumValue;
     }
+    
+    //Generate the randomNumber within a range
+    public int generateCoordinate(int minimumValue, int maximumValue)
+    {        
+        int randomNumber = minimumValue + (int)(Math.random() * (maximumValue - minimumValue));
+        return randomNumber;
+    }     
 }

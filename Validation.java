@@ -25,9 +25,9 @@ public class Validation
     
     public static boolean checkPosition(int pos, int defaultSize, boolean isNumeric)
     {
-        if ((pos < 0 || pos > defaultSize) && isNumeric == true)
+        if ((pos < 0 || pos >= defaultSize) && isNumeric == true)
         {
-            System.out.println("Ship Positon Must be between 0 and " + defaultSize);
+            System.out.println("Ship Positon Must be between 0 and " + (defaultSize-1));
             return false;
         }
         else if (isNumeric == false)
@@ -39,25 +39,5 @@ public class Validation
         {
             return true;
         }
-    }
-    
-    public static boolean checkRepeatPos(int xPos, int yPos, int[] xP, int[] yP)
-    {
-        for (int i = 0; i < xP.length; i++)
-        {
-            if (xPos == xP[i])
-            {
-                for (int j = 0; j < yP.length; j++)
-                {
-                    if (yPos == yP[j])
-                    {
-                        System.out.println("Position has already been taken!");
-                        System.out.println("Please re-enter~");
-                        return false;
-                    }
-                }          
-            }
-        }
-        return true;
     }
 }

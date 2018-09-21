@@ -40,28 +40,65 @@ public class ShipList
         ship.setYPos(yPos);
         ships.add(ship);
     }
-    
-    public int[] getShipXPosition(ArrayList<Ship> ships, int x)
+
+    public boolean getShipPosition(ArrayList<Ship> ships, int x, int y)
     {
-        int[] xPos = new int[x];
-        int i = 0;
         for (Ship s : ships)
         {
-            xPos[i] = s.getXPos();
-            i++;
+            if (x==s.getXPos() && y==s.getYPos())
+            {
+                return false;
+            }
         }
-        return xPos;
+        return true;
     }
     
-    public int[] getShipYPosition(ArrayList<Ship> ships, int y)
+    public int getShipStatus(ArrayList<Ship> ships, int x, int y)
     {
-        int[] yPos = new int[y];
+        for (Ship s : ships)
+        {
+            if (x==s.getXPos() && y==s.getYPos())
+            {
+                if (s.getNoOfHitsMade() >= 1)
+                {
+                    if (s.getNoOfHitsMade()==s.getNoOfHitsNeeded())
+                    {
+                        return 2;
+                    }
+                    return 1;
+                }
+                else
+                    return 3;
+            }
+        }
+        return 0;
+    }
+    
+    public void isShipHit(ArrayList<Ship> ships, int x, int y)
+    {
+        for (Ship s : ships)
+        {
+            if (x==s.getXPos() && y==s.getYPos())
+            {
+                s.setNoOfHitsMade(1);
+            }
+        }        
+    }
+    
+    public boolean isAllShipX(ArrayList<Ship> ships)
+    {
         int i = 0;
         for (Ship s : ships)
         {
-            yPos[i] = s.getYPos();
-            i++;
+            if (s.getNoOfHitsMade()==s.getNoOfHitsNeeded())
+            {
+                i++;
+            }
         }
-        return yPos;
-    }    
+        if (i==3)
+        {
+            return false;
+        }
+        return true;
+    }
 }
